@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="cssl.dialstaruser.User_tab">
+    <item
+        android:id="@+id/editprofile"
+        android:orderInCategory="100"
+        android:title="Edit Profile"
+        app:showAsAction="never" />
+    app:showAsAction="never" />
+    <item
+        android:id="@+id/grievance"
+        android:orderInCategory="100"
+        android:title="Grievance"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/logout"
+        android:orderInCategory="100"
+        android:title="Log Out"
+        app:showAsAction="never" />
+
+</menu>

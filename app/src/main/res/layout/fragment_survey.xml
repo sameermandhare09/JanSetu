@@ -1,0 +1,186 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:background="@color/white"
+    tools:context="user_fragment.Survey">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relative1"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/highlighted_text_user"
+            android:padding="5dp"
+            android:id="@+id/linear3"
+            android:orientation="vertical">
+        <TextView
+            android:id="@+id/txtcounter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtno"
+            android:text="@string/TODAYS_POLL"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+
+            />
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/txtno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="@string/data_not_present"
+            android:textSize="15dp"
+            android:gravity="center" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:id="@+id/linear"
+           android:paddingTop="@dimen/dimen_15"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:scrollbars="none"
+                android:layout_height="match_parent">
+
+            </android.support.v4.view.ViewPager>
+
+
+        </RelativeLayout>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/lnr1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_below="@id/linear"
+            android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dimen_5"
+    android:layout_marginBottom="@dimen/dimen_5"
+    android:orientation="horizontal">
+    <EditText
+        android:id="@+id/edmssg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="@dimen/dimen_5"
+
+        android:gravity="top"
+        android:lines="1"
+        android:layout_weight="0.1"
+        android:layout_alignParentLeft="true"
+        android:hint="@string/REASON"
+        android:background="@drawable/discussionbackground"
+        android:textColorHint="@color/textgrayuser"
+        android:padding="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.8">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="1dp"
+            android:background="@drawable/sendbackground"
+            >
+
+            <ImageView
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:padding="@dimen/dimen_10"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:foregroundGravity="center"
+                android:src="@drawable/send" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+
+
+    <!--<Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/roundedbluebtn"
+        android:gravity="center"
+        android:padding="@dimen/dimen_5"
+        android:text="@string/submit"
+        android:textColor="@color/white" />-->
+</LinearLayout>
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tabDots"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                app:tabGravity="center"
+                app:tabBackground="@drawable/tab_selector"
+                app:tabIndicatorColor="@color/btnblue"
+                app:tabIndicatorHeight="0dp"
+                app:tabMaxWidth="@dimen/dimen_15"
+                android:layout_marginTop="@dimen/dimen_5"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+        <LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/highlighted_text_user"
+    android:padding="5dp"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/txtothercount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+
+        />
+</LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:padding="@dimen/dimen_5"/>
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

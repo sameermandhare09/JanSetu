@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/dashboard"
+            android:title="@string/Dashboard" />
+
+        <item
+            android:id="@+id/nav_editProfile"
+            android:icon="@drawable/edit"
+            android:title="@string/edit_Profile" />
+
+   <!--     <item
+            android:id="@+id/nav_shareapp"
+            android:icon="@drawable/edit"
+            android:title="Share App" />
+-->
+
+
+    </group>
+
+    <item android:title="@string/exit">
+        <menu>
+            <item
+                android:id="@+id/nav_logOut"
+                android:icon="@drawable/logout"
+                android:title="@string/sign_Out" />
+
+        </menu>
+    </item>
+
+</menu>

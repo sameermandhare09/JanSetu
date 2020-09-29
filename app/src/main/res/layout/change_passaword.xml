@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Change Passaword"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_margin="15dp"
+       />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        app:passwordToggleDrawable="@drawable/ic_lock_open_black_24dp"
+        app:passwordToggleTint="@color/black"
+        app:passwordToggleEnabled="true"
+
+        android:id="@+id/txtpasswordcurrent">
+
+        <EditText
+            android:id="@+id/edpasswordcurrent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Current Password"
+            android:maxLength="35"
+             android:textColor="@color/black"
+            android:inputType="textPassword"
+            android:layout_gravity="center"/>
+    </android.support.design.widget.TextInputLayout>
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        app:passwordToggleDrawable="@drawable/ic_lock_open_black_24dp"
+        app:passwordToggleTint="@color/black"
+        app:passwordToggleEnabled="true"
+        android:id="@+id/txtpasswordnew1">
+
+        <EditText
+            android:id="@+id/edpasswordnew1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="New Password"
+            android:maxLength="35"
+            android:textColor="@color/black"
+            android:inputType="textPassword"
+            android:layout_gravity="center"/>
+    </android.support.design.widget.TextInputLayout>
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        app:passwordToggleDrawable="@drawable/ic_lock_open_black_24dp"
+        app:passwordToggleTint="@color/black"
+        app:passwordToggleEnabled="true"
+        android:id="@+id/txtpasswordnew2">
+
+        <EditText
+            android:id="@+id/edpasswordnew2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirm New Password"
+            android:maxLength="35"
+             android:textColor="@color/black"
+            android:inputType="textPassword"
+            android:layout_gravity="center"/>
+    </android.support.design.widget.TextInputLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btncancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+
+            android:layout_weight="0.5"
+
+
+            android:text="Cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/black" />
+        <Button
+            android:id="@+id/btnsave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="@color/black"
+            android:layout_margin="25dp"
+            android:textAllCaps="false"
+            android:layout_weight="0.5"
+
+            android:text="Save"
+            />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

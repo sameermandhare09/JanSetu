@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:background="@color/btngreen"
+    >
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_collapseMode="pin"
+        app:contentScrim="?attr/colorPrimary"
+        app:theme="@style/ToolbarColoredBackArrow"
+        app:titleTextColor="@color/white"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed"
+        android:background="@color/btngreen"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context="cssl.dialstar.representative_activity.Political_Details">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:layout_gravity="center"
+        android:text="Political Details:"/>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txtarea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:layout_marginTop="20dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Area"
+                android:id="@+id/edarea"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/white"
+                android:inputType="textPhonetic"/>
+        </android.support.design.widget.TextInputLayout>
+
+
+<!--
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txtward"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ward"
+                android:id="@+id/edward"
+                android:padding="10dp"
+                android:inputType="text"/>
+        </android.support.design.widget.TextInputLayout>
+-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Political Party:"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+
+        />
+    <Spinner
+        android:id="@+id/sppoliticalparty"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:prompt="@string/spinner_title"
+        tools:listheader="--Select--"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="2dp"/>
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/txtother"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Other Party"
+            android:id="@+id/edother"
+            android:inputType="text"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/white"
+
+            android:padding="10dp"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/txtmobilenumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:textColor="@color/black"
+
+        android:textColorHint="@color/black">
+
+        <EditText
+            android:id="@+id/edmobilenumber"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/white"
+            android:hint="Mobile Number"
+            android:inputType="number"
+            android:maxLength="10"
+            android:textColor="@color/white" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:passwordToggleEnabled="true"
+        android:id="@+id/txtpassword">
+
+        <EditText
+            android:id="@+id/edpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/white"
+            android:inputType="textPassword"
+            android:layout_gravity="center"/>
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:passwordToggleEnabled="true"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:id="@+id/txtconfirmpassword">
+
+        <EditText
+            android:id="@+id/edconfirmpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/white"
+            android:layout_gravity="center"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+     
+        android:text="Save"
+        android:id="@+id/btnsave"
+
+        android:padding="10dp"
+        android:background="@drawable/userloginbackgroundbtn"
+        android:textColor="@color/btngreen"
+        android:layout_margin="20dp"/>
+
+
+</LinearLayout>
+</android.support.v4.widget.NestedScrollView>
+</LinearLayout>

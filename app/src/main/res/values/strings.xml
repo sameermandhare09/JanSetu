@@ -1,0 +1,300 @@
+<resources>
+    <string name="app_name">JanSetu</string>
+    <string name="app_name_title">JanSetu</string>
+    <string name="app_name_subtitle">(Dombivlikar)</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="current_location"><u>Set the address using current location</u></string>
+    <string name="spinner_title">--Select--</string>
+    <string name="select_state">Please select State</string>
+    <string name="go_Back">  Go Back</string>
+    <string name="political_party">Political Party</string>
+    <string name="elected">Elected</string>
+    <string name="select_representative">Select Representative</string>
+    <string name="network_problem">Sorry network problem</string>
+    <string name="no_internet">No Internet Connection...</string>
+    <string name="msg_no_notes">No Notifications!</string>
+    <string name="ok">OK</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="Close">Close</string>
+    <string name="want_exit">Do you want to exit</string>
+    <!-- User Dashboard screen -->
+    <string name="add_Grievance">Add Grievance</string>
+    <string name="poll">Poll</string>
+    <string name="discussion">Discussion</string>
+    <string name="events">Events</string>
+    <string name="logout">Are you sure you want to logout</string>
+    <!-- User Navigation Drawer -->
+    <string name="view_Grievances">View Grievances</string>
+    <string name="edit_Profile">Edit Profile</string>
+    <string name="sign_Out">Sign Out</string>
+    <string name="exit">Exit</string>
+    <string name="Add">Add</string>
+    <!-- User Add Grievance -->
+    <string name="grievance_Category">Grievance Category</string>
+    <string name="grievance_example">E.g. Health, Education, Unemployment etc.</string>
+    <string name="subject">SUBJECT</string>
+    <string name="Description">       Type grievance description here...</string>
+    <string name="chars">300 Chars.</string>
+    <string name="take_pictures">Take pictures</string>
+    <string name="shoot_pic">Shoot pics and upload.</string>
+    <string name="submit">Submit</string>
+    <string name="clear">CLEAR</string>
+    <string name="Please_select_category">Please select category</string>
+    <string name="Please_select_representative">Please select representative</string>
+    <string name="Remove_first_added_image">Sorry.. Remove first added image</string>
+    <string name="delete_this_Image">Are you want to delete this Image</string>
+    <string name="Grievance_updated_successfully">Grievance updated successfully</string>
+    <string name="Select_Category">Select Category</string>
+    <string name="Health">Health</string>
+    <string name="Education">Education</string>
+    <string name="Infrastructure">Infrastructure</string>
+    <string name="Unemployment">Unemployment</string>
+    <string name="Women_Empowerment">Women Empowerment</string>
+    <string name="Central_Government_Schemes">Central Government Schemes</string>
+    <string name="State_Government_Schemes">State Government Schemes</string>
+    <string name="Law_And_Order">Law And Order</string>
+    <string name="electricity">Electricity</string>
+    <string name="road">Road</string>
+    <string name="watersupply">Water Supply</string>
+    <string name="traffic">Traffic</string>
+    <string name="Others">Others</string>
+
+    <!-- User Poll -->
+    <string name="data_not_present">Data not present</string>
+    <string name="TODAYS_POLL">Today\'s Poll</string>
+    <string name="REASON">REASON</string>
+    <string name="OTHER_POLLS">Other Polls</string>
+    <string name="answer_successfully_saved">Your precious answer successfully saved..!</string>
+    <!-- User Thanks -->
+    <string name="Your_request_send">Your request has been successfully send to</string>
+    <string name="Go_Back_To_Home">Go Back To Home </string>
+    <!-- User Discussion -->
+    <string name="DISCUSS">DISCUSS</string>
+    <string name="send">Send</string>
+    <string name="TOPIC">TOPIC</string>
+    <string name="BY">BY:</string>
+    <string name="DATE">DATE</string>CREATED BY:
+    <!-- User Event -->
+    <string name="CREATED_BY">Created by  </string>MY GRIEVANCE(S)
+    <string name="end_date_time">END DATE &amp; TIME: </string>
+    <string name="start_date_time">START DATE &amp; TIME:</string>
+    <string name="VIEW_DETAILS">VIEW DETAILS > </string>
+    <string name="I_WILL_JOIN">I WILL JOIN</string>
+    <string name="event_registered">You successfully register this event</string>
+    <string name="event_already_registered">Thank you!! but you already registered this event</string>
+    <!-- User Grievance -->
+    <string name="MY_GRIEVANCE">MY GRIEVANCE(S)</string>
+    <string name="DETAILS">DETAILS:</string>SEND TO:
+    <string name="SEND_TO">SEND TO:</string>
+    <string name="Total_Records">Total Records:  </string>
+    <string name="Pending">Pending</string>
+    <string name="Acknowledge">Acknowledge</string>
+    <string name="Solved">Solved</string>
+    <string name="edit">edit</string>
+    <string name="reminder">reminder</string>
+    <string name="Sent_from">Sent from</string>
+    <string name="delete_grievance">Are you want to delete this grievance</string>
+    <string name="delete_grievance_successfully">Grievance Successfully Deleted</string>Are you sure
+    reminder this grievance to
+    <string name="reminder_grievance">Are you sure reminder this grievance to</string>
+    <string name="reminder_grievance_successfully">Your reminder successfully send</string>
+    <!-- User Edit profile -->
+    <string name="EDIT_PROFILE">EDIT PROFILE</string>
+    <string name="Name">Name</string>SEND TO:
+    <string name="Gender">Gender : </string>
+    <string name="Male">Male</string>
+    <string name="Female">Female</string>
+    <string name="Other">Other</string>
+    <string name="dob">Date Of Birth</string>
+    <string name="Address">Address</string>
+    <string name="State">State</string>
+    <string name="District">District</string>
+    <string name="City">City</string>
+    <string name="Pin_Code">Pin Code</string>
+    <string name="Lok_Sabha_Constituency">Lok Sabha Constituency</string>Are you sure reminder this
+    grievance to
+    <string name="Vidhan_Sabha_Constituency">Vidhan Sabha Constituency</string>
+    <string name="Ward_Name">Ward Name</string>
+    <string name="Mobile_Number">Mobile Number</string>
+    <string name="Email">Email</string>
+    <string name="Profile_pic">Profile pic:</string>Change Password
+    <string name="Change_Password">Change Password</string>
+    <string name="save">Save</string>
+    <string name="Password_does_not_match">Password does not match</string>
+    <string name="Password_successfully_updated">Password successfully updated</string>
+    <string name="valid_password">Please enter valid password</string>
+    <string name="valid_ward_name">Please enter valid ward name</string>
+    <string name="correct_current_password">Please enter correct current password</string>
+    <string name="Take_Photo">Take Photo</string>
+    <string name="Choose_from_Library">Choose from Library</string>
+    <string name="Cancel">Cancel</string>
+    <string name="valid_mobile_number">Please enter valid mobile number</string>
+    <string name="valid_name">Please enter valid  name</string>
+    <string name="valid_lok_sabha_constituency">Please enter valid lok sabha constituency</string>
+    <string name="valid_address">Please enter valid address</string>
+    <string name="valid_State">Please enter valid State</string>
+    <string name="valid_District">Please enter valid District</string>
+    <string name="valid_City">Please enter valid City</string>
+    <string name="valid_dob">Please enter valid date of birth</string>
+    <string name="valid_Pin_Code">Please enter valid Pin Code</string>
+    <string name="valid_vidhan_sabha_constituency">Please enter valid vidhan sabha constituency</string>
+    <string name="Select_State">Select State</string>
+    <string name="Select_District">Select District</string>
+    <string name="Select_Constituency">Select or Add Constituency</string>
+    <string name="Select_City">Select City</string>
+    <string name="Select_Pin_Code">Select  Pin Code </string>
+    <string name="successfully_updated"> successfully updated.</string>
+    <string name="Incorrect_PinCode">Incorrect PinCode </string>
+    <string name="Select_Lok_Sabha_Constituency">Select Lok Sabha Constituency</string>
+    <!-- User Login -->
+    <string name="User_Login">User Login</string>
+    <string name="Email_optional">Email(optional)</string>
+    <string name="Password">Password</string>
+    <string name="Login">Login</string>
+    <string name="FORGOT_PASSWORD">FORGOT PASSWORD?</string>
+    <string name="Dont_have_account"> Don\'t have account?</string>
+    <string name="Register_Now"> Register Now</string>
+    <string name="valid_username_and_password">Invalid username and password</string>
+    <string name="ten_digit_mobile_number"> Please enter 10 digit mobile number</string>
+    <!-- User Registration -->
+    <string name="Registration">Registration</string>
+    <string name="Register">Register</string>
+    <string name="Confirm_Password">Confirm Password</string>
+    <string name="Already_account">Already has account! Login here</string>Please Re-enter password
+    <string name="Re_enter_password">Please Re-enter password</string>Please register with another
+    Id
+    <string name="already_exits">Please register with another Mobile Number</string>
+    <string name="Already_Exists">Already Exists..</string>
+    <string name="Error">Error</string>
+    <!--  Representative Login    -->
+    <string name="Representative_Login">Representative Login</string>
+    <!--  Main screen Login    -->
+    <string name="USER_LOGIN">USER LOGIN</string>
+    <string name="REPRESENTATIVE_LOGIN">REPRESENTATIVE LOGIN</string>
+    <string name="Grievance_Redressal_System">Grievance Redressal System</string>
+    <string name="We_help_in_improving_the_citizen_service">We help in improving the citizen service</string>
+    <string name="delivery_and_also_in_transforming_the">delivery and also in transforming the</string>
+    <string name="goverment_into_more_transparent_efficient">government into more transparent efficient</string>
+    <string name="and_citizen_centric_mode">and citizen-centric mode.</string>
+    <string name="Please_ask_to_Admin_active_your_account.">Please ask to Admin active your account.</string>
+    <string name="Your_account_has_been_created_successfully">Your account has been created successfully.</string>
+    <string name="Dashboard">Dashboard</string>
+    <string name="Logout_unsuccessful">Logout unsuccessful</string>
+    <string name="Representative">Representative</string>
+    <string name="Issue_View">Issue View</string>
+    <!--  Issue View -->
+    <string name="polls">Polls</string>
+    <string name="discussions">Discussions</string>
+    <string name="Democracy_is_beautiful_in_theory_in">Democracy is beautiful in theory; in</string>
+    <string name="practice_it_is_a_fallacy">practice it is a fallacy.</string>
+    <string name="Benito_Mussolini">- Benito Mussolini</string>
+    <string name="Representatives_not_registered">Representatives  not registered</string>
+    <!--  Grievance -->
+    <string name="COMPLETED">COMPLETED</string>
+    <string name="NEW">NEW</string>
+    <string name="ON_GOING">ON GOING</string>
+    <!--   Grievance  Adapter-->
+    <string name="Assigned_to">Assigned to:</string>
+    <string name="Acknowledge_by">Acknowledge by </string>
+    <string name="On">On </string>
+    <string name="Closed_by">Closed by </string>
+    <!--   Grievance  Details-->
+    <string name="Citizen_Name">Citizen Name</string>
+    <string name="FORWARD">FORWARD</string>
+    <string name="MAIL_TO">MAIL TO</string>
+    <string name="Forward_This_Grievance_To">Forward This Grievance To</string>
+    <string name="Please_select_user_type">Please select user type </string>
+    <string name="Please_select_sender_representative">Please select sender representative </string>
+    <string name="Please_enter_valid_email">Please enter valid email</string>
+    <string name="POSTED_ON">POSTED ON: </string>
+    <string name="Acknowledge_Success">Successfully Acknowledged </string>
+    <string name="Successfully_Close"> Successfully Close</string>
+    <string name="Connection_Problem">Connection Problem</string>
+    <string name="Select_Representative_Type">Select Representative Type</string>
+    <string name="Select_Representative">Select Representative</string>
+    <string name="cancel">Cancel</string>
+    <string name="Email_successfully_send">Email successfully send</string>
+    <string name="Acknowledge_By">Acknowledge By</string>
+    <string name="Acknowledge_Date">Acknowledge Date</string>
+    <string name="Closed_By">Closed By</string>
+    <string name="Close_Date">Close Date</string>
+    <!--   event-->
+    <string name="Add_new">Add new</string>
+    <string name="delete">Delete</string>
+    <string name="Interested_citizen_for_this_event">Interested citizen for this event:   </string>
+    <string name="Are_you_want_to_delete_this_Event">Are you want to delete this Event</string>
+    <string name="Event_Successfully_Deleted">Event Successfully Deleted </string>
+    <string name="Event_Description">       Type event description here...</string>
+    <string name="Add_Event">Add Event</string>
+    <string name="Event_Name">Event Name</string>
+    <string name="From_Date">From Date</string>
+    <string name="From_Time">From Time</string>
+    <string name="To_Date">To Date</string>
+    <string name="To_Time">To Time</string>
+    <string name="Please_enter_start_date_before_the_end_date">Please enter start date before the end date  </string>
+    <string name="Please_enter_Description">Please enter Description</string>
+    <string name="Please_enter_End_Date">Please enter End Date</string>
+    <string name="Please_enter_End_Time">Please enter End Time</string>
+    <string name="Please_enter_Start_Date">Please enter Start Date</string>
+    <string name="Please_enter_Start_Time">Please enter Start Time</string>
+    <string name="Please_enter_Event_Name">Please enter Event Name</string>
+    <string name="Population">Population : </string>
+    <string name="Event_not_add_successfully">Event not add successfully</string>
+    <string name="Your_event_successfully_added">Your event successfully added</string>
+    <string name="Event_updated_successfully">Event updated successfully</string>
+    <string name="Event_not_updated_successfully">Event not updated successfully</string>
+    <!--   poll   -->
+    <string name="Reason">Reason</string>
+    <string name="Enter_Reason">Enter Reason</string>
+    <string name="Please_enter_Reason">Please enter reason</string>
+    <string name="Poll_Successfully_Deleted">Poll Successfully Deleted </string>
+    <!-- create  poll   -->
+    <string name="Add_Poll">Add Poll</string>
+    <string name="Subject">Subject</string>
+    <string name="Option1">Option1</string>
+    <string name="Option2">Option2</string>
+    <string name="Option3">Option3</string>
+    <string name="Option4">Option4</string>
+    <string name="Option5">Option5</string>
+    <string name="update">update</string>
+    <string name="Please_enter_option2">Please enter option2</string>
+    <string name="Please_enter_option1">Please enter option1</string>
+    <string name="Please_enter_subject">Please enter subject</string>
+    <string name="Sorry_poll_Not_created">Sorry poll Not created</string>
+    <string name="Poll_Successfully_Added">Poll Successfully Added </string>
+    <!--new discussion-->
+    <string name="new_discussion"> New Discussion</string>
+    <string name="Discussion_successfully_added">Discussion successfully added</string>
+    <string name="Please_enter_a_valid_topic">Please enter a valid topic</string>
+    <string name="Add_Photo">Add Photo!</string>
+    <string name="Area">Area</string>
+    <string name="Please_enter_valid_area">Please enter valid area</string>
+    <string name="Not_updated">Not updated</string>
+    <string name="Mail_This_Grievance_To">Mail This Grievance To</string>
+    <string name="Recipient_Mail_Id">Recipient Mail Id</string>
+    <string name="Forward_successfully">Forward successfully</string>
+    <string name="Please_select_Master_User">Please select Master User</string>
+    <string name="Total_Issues">Total Issues: </string>
+    <string name="title_activity_full_image">FullImage</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_fullscreen_image">FullscreenImage</string>
+    <string name="Please_Select_your_answer">Please Select your answer</string>
+    <string name="welcome">W E L C O M E  T O</string>
+    <string name="English">English</string>
+    <string name="Hindi">Hindi</string>
+    <string name="Marathi">Marathi</string>
+    <string name="select_language">Choose Language</string>
+    <string name="Invalid_Login">Invalid Login</string>
+    <string name="User_Address"> Citizen Address</string>
+    <string name="Grievance_Address">Grievance Address</string>
+    <string name="gender">Gender</string>
+    <string name="Mandal_Name">Mandal Name</string>
+    <string name="Association_Name">Name of association (social /NGO)</string>
+
+
+</resources>

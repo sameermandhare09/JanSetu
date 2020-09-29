@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "21124721791",
+    "firebase_url": "https://dialstar-16614.firebaseio.com",
+    "project_id": "dialstar-16614",
+    "storage_bucket": "dialstar-16614.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:21124721791:android:9a368a6c29244092",
+        "android_client_info": {
+          "package_name": "cssl.dialstar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "21124721791-amir502chp6etb16tcqouuq5rvdiror0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8jKacGuocmQ7rNLUWYZ-zR-6OqTRrJrs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

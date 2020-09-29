@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="cssl.dialstar.user_activity.UserDashboard"
+    tools:showIn="@layout/app_bar_user_dashboard">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/activity_main_layout">
+
+ <android.support.design.widget.TabLayout
+     android:id="@+id/tabs"
+     android:layout_width="match_parent"
+     android:background="@color/white"
+     app:tabTextColor="@color/black"
+     app:tabSelectedTextColor="@color/holo_blue_light"
+     android:layout_height="wrap_content"
+     app:tabIndicatorColor="@color/holo_blue_light"
+     app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+     >
+ </android.support.design.widget.TabLayout>
+<!-- <android.support.v4.view.ViewPager
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     android:id="@+id/viewPager2"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     >
+ </android.support.v4.view.ViewPager>-->
+ <FrameLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:id="@+id/mainFrame"
+     tools:layout_editor_absoluteY="8dp"
+     tools:layout_editor_absoluteX="8dp">
+
+
+
+ </FrameLayout>
+
+
+</LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

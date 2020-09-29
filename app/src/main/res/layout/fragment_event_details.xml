@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <!--
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="@string/go_Back"
+        android:id="@+id/back"
+        android:paddingLeft="15dp"
+        android:paddingTop="@dimen/dimen_12"
+        android:paddingBottom="@dimen/dimen_12"
+        android:background="@color/green"
+        android:drawablePadding="@dimen/dimen_5"
+        android:drawableLeft="@drawable/ic_arrow_back_white_16dp"
+        android:textColor="@color/white"
+        />
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+                <TextView
+                    android:id="@+id/EventName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:gravity="left"
+                    android:text="Title"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/desp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Desp"
+                    android:textColor="@color/black"
+                    android:gravity="left"
+                    android:textSize="17dp"
+                    android:layout_marginTop="11dp"
+                    />
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    android:layout_marginTop="11dp"
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="0.5"
+                        >
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/start_date_time"
+                            android:gravity="left"
+                            />
+                        <TextView
+                            android:id="@+id/Start"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:gravity="left"
+                            android:textSize="13dp"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="0.3">
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/end_date_time"
+                            android:gravity="left"
+
+                            />
+                        <TextView
+                            android:id="@+id/end"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:gravity="left"
+                            android:textSize="13dp"
+
+                            />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Number of Joiner: 40"
+                    android:layout_marginTop="11dp"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:id="@+id/txteventcount"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dimen_10"
+                    android:layout_marginTop="20dp"
+                    android:visibility="visible"
+                    android:id="@+id/lnrbuttons"
+
+                    android:layout_below="@+id/PublishBy">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/edit"
+                        android:layout_weight="0.5"
+                        android:visibility="visible"
+                        android:id="@+id/btneventedit"
+                        android:textSize="16dp"
+                        android:layout_marginRight="10dp"
+
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:textColor="@color/btnblue"
+                        android:background="@drawable/bjpsquarewhitebtn"
+                        android:drawableRight="@drawable/editicon"
+                        />
+
+                    <Button
+                        android:id="@+id/btneventdelete"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="0.5"
+                        android:textSize="16dp"
+                        android:visibility="visible"
+                        android:text="@string/delete"
+                        android:textColor="@color/btnblue"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:drawableRight="@drawable/remove"
+                        android:background="@drawable/bjpsquarewhitebtn"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>
+

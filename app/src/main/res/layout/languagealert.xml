@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/dimen_5"
+    android:paddingLeft="@dimen/dimen_20"
+
+    >
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_5"
+        android:text="@string/English"
+
+
+        android:textSize="@dimen/dimen_20"
+        android:textColor="@color/black"
+        android:id="@+id/txtenglish"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_5"
+        android:text="@string/Hindi"
+        android:textSize="@dimen/dimen_20"
+        android:textColor="@color/black"
+
+        android:id="@+id/txthindi"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_5"
+        android:text="@string/Marathi"
+
+        android:textSize="@dimen/dimen_20"
+        android:textColor="@color/black"
+        android:id="@+id/txtmarathi"/>
+
+</LinearLayout>

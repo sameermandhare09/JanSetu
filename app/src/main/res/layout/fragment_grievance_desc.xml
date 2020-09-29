@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".representative_fragment.Grievance_desc">
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:background="@color/green"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:text="@string/go_Back"
+                    android:id="@+id/txtback"
+                    android:drawablePadding="@dimen/dimen_5"
+                    android:layout_alignParentLeft="true"
+                    android:drawableLeft="@drawable/ic_arrow_back_white_16dp"
+                    android:textColor="@color/white"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/txtcreateddate"
+                    android:textSize="16dp"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="5dp"
+                    android:text="March 28, 2018"/>
+
+            </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!-- TODO: Update blank fragment layout -->
+
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:orientation="vertical"
+
+            >
+
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgerecycler"
+                android:padding="@dimen/dimen_5">
+            </android.support.v7.widget.RecyclerView>
+
+            <android.support.v4.view.ViewPager
+                android:visibility="gone"
+                android:id="@+id/viewPager1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/profile_image"
+                android:layout_alignParentTop="true" />
+            <com.viewpagerindicator.CirclePageIndicator
+                android:id="@+id/indicator"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="bottom"
+                android:padding="10dip"
+                app:centered="true"
+                app:fillColor="#43df06"
+                app:pageColor="#fff"
+                android:visibility="gone"
+                app:snap="false" />
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:padding="15dp">
+
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:textSize="14dp"
+                  android:text="@string/DETAILS"
+                  />
+
+
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:textSize="16dp"
+                  android:text="Subject details"
+                  android:id="@+id/txtsubjectdetails"
+                  android:textColor="@color/black"
+                  android:padding="@dimen/dimen_5"
+            />
+              <TextView
+                  android:layout_width="match_parent"
+                  android:background="@color/dim_foreground_holo_dark"
+                  android:layout_height="1dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/lnrcitizen">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="@string/Citizen_Name"
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                android:padding="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Citizen Name"
+                android:textColor="@color/colorPrimary"
+                android:layout_weight="0.5"
+                android:id="@+id/txtusername"
+                android:textSize="16dp"
+                android:padding="5dp"/>
+        </LinearLayout>
+
+
+            <TextView
+            android:layout_width="match_parent"
+                android:background="@color/dim_foreground_holo_dark"
+            android:layout_height="1dp"/>
+
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:id="@+id/lnr_acknowledgeby"
+                  android:visibility="gone">
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="@string/Acknowledge_By"
+                      android:layout_weight="0.5"
+                      android:textSize="14dp"
+                      android:textColor="@color/black"
+                      android:padding="5dp"/>
+
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="XYZ"
+                      android:layout_weight="0.5"
+                      android:id="@+id/txtView_acknowledgeby"
+                      android:textSize="16dp"
+                      android:textColor="@color/black"
+                      android:padding="5dp"/>
+              </LinearLayout>
+              <TextView
+                  android:layout_width="match_parent"
+                  android:id="@+id/txtunderlineackby"
+                  android:background="@color/dim_foreground_holo_dark"
+                  android:layout_height="1dp"
+                  android:visibility="gone"/>
+
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:id="@+id/lnr_acknowledgedate"
+                  android:visibility="gone">
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="@string/Acknowledge_Date"
+                      android:layout_weight="0.5"
+                      android:textSize="14dp"
+                      android:textColor="@color/black"
+                      android:padding="5dp"/>
+
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="March 28, 2018"
+                      android:layout_weight="0.5"
+                      android:id="@+id/txtView_acknowledgedate"
+                      android:textSize="16dp"
+                      android:textColor="@color/black"
+                      android:padding="5dp"/>
+              </LinearLayout>
+              <TextView
+                  android:layout_width="match_parent"
+                  android:id="@+id/txtunderlineackdate"
+                  android:background="@color/dim_foreground_holo_dark"
+                  android:layout_height="1dp"
+                  android:visibility="gone"/>
+
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:id="@+id/lnr_close"
+                  android:visibility="gone">
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="@string/Closed_By"
+                      android:layout_weight="0.5"
+                      android:textSize="14dp"
+                      android:textColor="@color/black"
+                      android:padding="5dp"/>
+
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="XYZ"
+                      android:layout_weight="0.5"
+                      android:id="@+id/txtView_Closeby"
+                      android:textSize="16dp"
+                      android:textColor="@color/black"
+                      android:padding="5dp"/>
+              </LinearLayout>
+              <TextView
+                  android:layout_width="match_parent"
+                  android:id="@+id/txtunderlinecloseby"
+                  android:background="@color/dim_foreground_holo_dark"
+                  android:layout_height="1dp"
+                  android:visibility="gone"/>
+
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:id="@+id/lnr_closedate"
+                  android:visibility="gone">
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="@string/Close_Date"
+                      android:layout_weight="0.5"
+                      android:textSize="14dp"
+                      android:textColor="@color/black"
+                      android:padding="5dp"/>
+
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="March 28, 2018"
+                      android:layout_weight="0.5"
+                      android:id="@+id/txtView_Closedate"
+                      android:textSize="16dp"
+                      android:textColor="@color/black"
+                      android:padding="5dp"/>
+              </LinearLayout>
+              <TextView
+                  android:layout_width="match_parent"
+                  android:id="@+id/txtunderlineclosedate"
+                  android:background="@color/dim_foreground_holo_dark"
+                  android:layout_height="1dp"
+                  android:visibility="gone"/>
+
+
+              <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                  android:textSize="14dp"
+                  android:layout_marginTop="5dp"
+                android:text="SUBJECT:"
+                  android:visibility="gone"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:text="Subject name"
+                android:id="@+id/txtsubject"
+                android:visibility="gone"
+                android:textColor="@color/black"
+                android:layout_marginBottom="15dp"/>
+
+
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+
+                  android:paddingTop="@dimen/dimen_5"
+                  android:paddingBottom="@dimen/dimen_5"
+                  android:layout_marginTop="15dp">
+                  <Button
+                      android:id="@+id/btn_acknowledge"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="0.4"
+                      android:layout_marginRight="@dimen/dimen_5"
+
+                      android:paddingLeft="2dp"
+                      android:paddingRight="2dp"
+
+                      android:textSize="9dp"
+                      android:background="@drawable/bjpsquarewhitebtn"
+                      android:textColor="@color/btnblue"
+
+                     />
+                  <Button
+                      android:id="@+id/btn_forward"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="@string/FORWARD"
+                     android:layout_marginRight="@dimen/dimen_5"
+                      android:layout_weight="0.4"
+
+                      android:paddingLeft="@dimen/dimen_5"
+                      android:paddingRight="@dimen/dimen_5"
+
+                      android:textSize="10dp"
+                      android:drawableRight="@drawable/forward"
+                      android:background="@drawable/bjpsquarewhitebtn"
+                      android:textColor="@color/btnblue"
+                     />
+                  <Button
+                      android:id="@+id/btn_mail_to"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                    android:text="@string/MAIL_TO"
+                      android:paddingLeft="@dimen/dimen_5"
+                      android:paddingRight="@dimen/dimen_5"
+
+                      android:textSize="10dp"
+                      android:drawableRight="@drawable/email"
+                      android:background="@drawable/bjpsquarewhitebtn"
+                      android:textColor="@color/btnblue"
+                      android:layout_weight="0.4"
+                      />
+
+              </LinearLayout>
+
+
+          </LinearLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

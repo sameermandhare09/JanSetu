@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+    android:orientation="vertical"
+   android:paddingBottom="@dimen/dimen_15"
+>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lnr1"
+        android:padding="@dimen/dimen_5"
+        android:background="@color/transparent1"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/dimen_10">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+
+            android:id="@+id/profilepic"
+            android:src="@drawable/noimage" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="@dimen/dimen_5"
+            android:layout_marginLeft="@dimen/dimen_20"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+              <!--  <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Citizen_Name"
+                    android:textSize="14dp" />-->
+
+                <TextView
+                    android:id="@+id/txtcitizenname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sameer"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lnrname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/dimen_10">
+
+               <!-- <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Mobile_Number"
+                    android:textSize="14dp" />-->
+
+                <TextView
+                    android:id="@+id/txtusermobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="9527727841"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lnrgender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+               <!-- <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gender"
+                    android:textSize="14dp"
+
+                    />-->
+
+
+                <TextView
+                    android:id="@+id/txtusergender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gender"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lnrcitizendetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/dimen_5"
+        android:visibility="visible">
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/lnremail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Email"
+
+                android:textSize="14dp"
+
+                />
+
+            <TextView
+                android:id="@+id/txtuseremail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Email"
+
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lnradd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/User_Address"
+
+                android:textSize="14dp"
+
+                />
+
+
+            <TextView
+                android:id="@+id/txtuseraddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/User_Address"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnrgrievadd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Grievance_Address"
+
+                android:textSize="14dp"
+
+                />
+
+
+            <TextView
+                android:id="@+id/txtgrivanceaddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Grievance_Address"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

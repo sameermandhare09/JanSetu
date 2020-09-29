@@ -1,0 +1,140 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="user_fragment.Discussion">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+
+            android:id="@+id/txtno"
+            android:text="@string/data_not_present"
+            android:gravity="center"/>
+
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="60dp"
+            android:id="@+id/swipeRefreshLayout"
+            >
+
+           <!-- <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+            </android.support.v4.view.ViewPager>-->
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/lnrdesc"
+            android:padding="@dimen/dimen_10"
+            android:layout_alignParentBottom="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal"
+                >
+                <EditText
+                    android:id="@+id/comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/DISCUSS"
+                    android:layout_weight="0.1"
+                    android:padding="5dp"
+                    android:singleLine="false"
+                    android:layout_above="@+id/type"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="top"
+                    android:layout_marginRight="@dimen/dimen_10"
+                    android:background="@drawable/discussionbackground"
+                    android:lines="2"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:padding="1dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="1dp"
+                        android:background="@drawable/sendbackground"
+                        >
+
+                        <ImageView
+                            android:id="@+id/button2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:foregroundGravity="center"
+                            android:padding="@dimen/dimen_10"
+                            android:src="@drawable/send" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <!--    <Button
+                        android:id="@+id/button2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/roundedbluebtn"
+                        android:padding="20dp"
+                        android:layout_margin="20dp"
+                        android:layout_gravity="center"
+                        android:text="@string/send"
+                        android:textColor="@color/white"
+                        />-->
+
+
+            </LinearLayout>
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tabDots"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                app:tabGravity="center"
+                app:tabBackground="@drawable/tab_selector"
+                app:tabIndicatorColor="@color/btnblue"
+                app:tabIndicatorHeight="0dp"
+                app:tabMaxWidth="@dimen/dimen_15"
+                android:layout_marginTop="@dimen/dimen_10"/>
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/lnrdesc"
+            >
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+            </android.support.v4.view.ViewPager>
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>

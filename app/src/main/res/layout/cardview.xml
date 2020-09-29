@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="85dp"
+    android:layout_height="85dp"
+    android:gravity="center"
+    android:layout_margin="5dp"
+    android:layout_gravity="center"
+
+
+
+    >
+
+    <RelativeLayout
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/imagell"
+            android:layout_gravity="center_horizontal"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/imageView"
+                android:src="@mipmap/ic_launcher"/>
+          <!--  <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/imageView"
+
+
+                />-->
+            <!--
+             android:background="@drawable/rounded_background"
+
+
+            -->
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewVersion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_alignRight="@id/imagell"
+            android:textSize="8sp"
+            android:background="@drawable/item_count"
+           />
+
+
+    </RelativeLayout>
+
+<!--    <TextView
+                android:id="@+id/textViewName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="dadar"
+                 android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="10dp"
+                />-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewName"
+        android:textSize="10dp"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="@color/black"/>
+
+
+
+</LinearLayout>

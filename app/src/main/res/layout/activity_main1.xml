@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="cssl.dialstar.representative_activity.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        android:background="@drawable/mainpagebg"
+        android:layout_weight="0.5"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_marginTop="50dp"
+            android:text="@string/welcome"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dimen_15"
+            android:layout_marginBottom="30dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/imageView_Main_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo_white"
+              />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/dimen_5">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_name_title"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dimen_30"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_name_subtitle"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dimen_20"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:padding="5dp"
+
+            android:textColor="@color/yallow"
+            android:layout_marginBottom="10dp"
+            android:text="@string/Grievance_Redressal_System"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            android:padding="3dp"
+            android:text="@string/We_help_in_improving_the_citizen_service"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="17dp"
+            android:padding="3dp"
+            android:textColor="@color/white"
+
+            android:text="@string/delivery_and_also_in_transforming_the"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="17dp"
+            android:padding="3dp"
+            android:textColor="@color/white"
+
+            android:text="@string/goverment_into_more_transparent_efficient"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="17dp"
+            android:layout_marginBottom="10dp"
+
+            android:padding="3dp"
+            android:textColor="@color/white"
+            android:text="@string/and_citizen_centric_mode"/>
+
+
+
+
+    </LinearLayout>
+
+    <!--<android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.9"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="15dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/roundedbluebtn"
+                android:id="@+id/btn_user_login"
+
+                android:gravity="center"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/USER_LOGIN"
+                    android:textSize="17dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_arrow_forward_white_24dp"
+                    android:layout_marginLeft="20dp"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="15dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/roundedgreenbtn"
+
+                android:id="@+id/btn_mla_login"
+
+                android:gravity="center"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/REPRESENTATIVE_LOGIN"
+                    android:textSize="17dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_arrow_forward_white_24dp"
+                    android:layout_marginLeft="20dp"/>
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+<!--    </android.support.v4.widget.NestedScrollView>-->
+
+
+</LinearLayout>

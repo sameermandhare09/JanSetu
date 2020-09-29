@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/pollcardview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textAlignment="center"
+    android:padding="10dp"
+    app:cardBackgroundColor="@color/offwhite3"
+    android:layout_margin="7dp">
+
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="20 Jan 2018, 12:30 AM"
+            android:textColor="@color/black"
+            android:id="@+id/txtdate"/>
+
+
+
+        <TextView
+            android:id="@+id/PollName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Subject "
+            android:textColor="@android:color/black"
+            android:textSize="17dp"
+            />
+        <TextView
+            android:id="@+id/PublishBy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="5dp"
+            android:text="This Event publish in"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            android:visibility="gone"
+            />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/lnroption1"
+            android:visibility="visible"
+            android:layout_marginRight="10dp"
+            android:padding="5dp">
+            <TextView
+
+                android:visibility="visible"
+                android:id="@+id/Option1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_weight="1"
+                android:text="yes"
+                android:layout_marginRight="10dp"
+
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+
+                />
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:id="@+id/progoption1"
+                android:progressTint="@color/holo_green_light"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="55%"
+                android:id="@+id/txtperoption1"
+                android:layout_marginRight="5dp"
+                android:textSize="16sp"
+                android:layout_weight="1.3"/>
+
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/lnroption2"
+        android:visibility="visible"
+        android:layout_marginRight="10dp"
+        android:padding="5dp">
+
+        <TextView
+            android:visibility="visible"
+            android:id="@+id/Option2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_weight="1"
+
+            android:layout_marginRight="10dp"
+
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:text="no"
+
+            />
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:id="@+id/progoption2"
+            android:progressTint="@color/holo_button_normal"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:text="55%"
+            android:id="@+id/txtperoption2"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1.3"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/lnroption3"
+        android:layout_marginRight="10dp"
+        android:visibility="gone"
+        android:padding="5dp">
+        <TextView
+            android:visibility="visible"
+            android:id="@+id/Option3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_weight="1"
+
+            android:layout_marginRight="10dp"
+
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:text="Not interested"
+            />
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+           android:id="@+id/progoption3"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="55%"
+            android:textSize="16sp"
+            android:id="@+id/txtperoption3"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1.3"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/lnroption4"
+        android:visibility="gone"
+        android:layout_marginRight="10dp"
+        android:padding="5dp">
+        <TextView
+            android:visibility="visible"
+            android:id="@+id/Option4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_marginRight="10dp"
+
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            android:layout_below="@+id/Starting"
+            />
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+
+         android:id="@+id/progoption4"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/txtperoption4"
+            android:text="55%"
+            android:textSize="16sp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1.3"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/lnroption5"
+        android:visibility="gone"
+        android:layout_marginRight="10dp"
+        android:padding="5dp">
+        <TextView
+            android:visibility="visible"
+            android:id="@+id/Option5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:textColor="@android:color/black"
+
+            android:layout_below="@+id/Starting"
+            />
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:id="@+id/progoption5"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="55%"
+            android:textSize="16sp"
+            android:id="@+id/txtperoption5"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1.3"/>
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:id="@+id/lnrbutton"
+           >
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/edit"
+
+                android:layout_weight="0.5"
+                android:visibility="visible"
+                android:id="@+id/btnpolledit"
+                android:textSize="16dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/btnblue"
+                android:background="@drawable/bjpsquarewhitebtn"
+                android:drawableRight="@drawable/editicon"   />
+
+
+            <Button
+                android:id="@+id/btnpolldelete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:visibility="visible"
+                android:layout_weight="0.5"
+                android:text="@string/delete"
+                android:textSize="16dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/btnblue"
+                android:drawableRight="@drawable/remove"
+                android:background="@drawable/bjpsquarewhitebtn"
+                  />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnrviewanswer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:background="@color/offwhite"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" View Answer "
+                android:textSize="15sp"
+                android:visibility="visible"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:id="@+id/txtviewanswer"
+
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>
